@@ -1,0 +1,22 @@
+body{
+height: 100vh;
+background:linear-gradient(3deg, #000000,  #3533CD);
+
+}
+
+.titleMenuHome{
+  margin-top: 30px;
+  color: #FEDC58;
+  text-align: center;
+  font-size: 20pt;
+}
+header{
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+}
+main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
