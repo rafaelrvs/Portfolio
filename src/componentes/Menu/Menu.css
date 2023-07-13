@@ -1,7 +1,15 @@
 #menuOption{
 position: absolute;
 height: 30px;
-margin-left: 50px;
+right: 25px;
 margin-top: 25px;
+}
 
+@media (min-width:1200px) {
+  #menuOption{
+    position: absolute;
+    height: 30px;
+    right: 25px;
+    margin-top: 80px;
+    }
 }
