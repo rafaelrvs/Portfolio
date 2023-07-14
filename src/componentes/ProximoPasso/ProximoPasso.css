@@ -1,5 +1,39 @@
 
-
+.newPage{
+  position: fixed;
+  top: 2%;
+  left: 3%;
+  height: 700px;
+  width: 1000px;
+  background:linear-gradient(10deg, #000000, rgb(44, 181, 239));;
+  z-index: 6;
+  border: 10px black solid;
+  border-radius: 25px;
+}
 .dotted-line {
-  border-top: 1px dotted black;
+  border-top: 5px dotted #ffc91f;
+  width: 200px;
+  margin-top: -20px;
+  margin-left: 600px;
+}
+#nome{
+  font-size: 25pt;
+  color:#ffc91f;
+  font-weight: 700;
+  margin-left: 600px;
+}
+
+#imgOrganizacao{
+  height: 200px;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 100px;
+  font-size:25pt ;
+  color: #ffc91f;
+  font-weight: 800;
 }

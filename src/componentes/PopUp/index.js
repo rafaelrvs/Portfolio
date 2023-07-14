@@ -4,6 +4,7 @@ import Projeto from '../ProjetoMenu';
 import NewWindow from '../NewWindow';
 import Conhecimento from '../Conhecimento';
 import ProximoPasso from '../ProximoPasso';
+import MetasEobjetivo from '../MetasEobjetivos';
 
 
 const PopUp = () => {
@@ -12,9 +13,14 @@ const PopUp = () => {
   const [paginaInteresses, setmostrarInteresses] = useState(false);
   const [apresentarConhecimento, setApresentarConhecimento] = useState(false);
   const [apresentacaoDaPaginaProximoPasso, setapresentacaoDaPaginaProximoPasso] = useState(false);
+  const [showMetaEobjetivo, setshowMetaEobjetivo] = useState(false);
   //------ >   Pagina Projeto <-----------
   const clickProjeto = (event) => {
     setpaginaProjetoAtivo(true);
+    setmostrarInteresses(false)
+    setApresentarConhecimento(false)
+    setapresentacaoDaPaginaProximoPasso(false)
+    setshowMetaEobjetivo(false)
     event.preventDefault();
   };
 
@@ -22,20 +28,41 @@ const PopUp = () => {
   
   const clickInteresses = (event) => {
     setmostrarInteresses(true);
+    setpaginaProjetoAtivo(false);
+    setApresentarConhecimento(false)
+    setapresentacaoDaPaginaProximoPasso(false)
+    setshowMetaEobjetivo(false)
     event.preventDefault();
   };
   //------ >   pagina conhecimento <-----------
   const clickConhecimento = (event) => {
-    setapresentacaoDaPaginaProximoPasso(true)
+    setApresentarConhecimento(true)
+    setpaginaProjetoAtivo(false);
+    setmostrarInteresses(false);
+    setapresentacaoDaPaginaProximoPasso(false)
+    setshowMetaEobjetivo(false)
     event.preventDefault();
   };
   //------ >   pagina proximo Passo <-----------
   
   const clickProximoPasso = (event) => {
-    setPaginaInicial(false);
-    setpaginaProjetoAtivo(false);
-    setmostrarInteresses(false);
+
     setapresentacaoDaPaginaProximoPasso(true)
+    setmostrarInteresses(true);
+    setpaginaProjetoAtivo(false);
+    setApresentarConhecimento(false)
+    setshowMetaEobjetivo(false)
+    event.preventDefault();
+  };
+  //------ >   pagina Meta e Objetivo <-----------
+  
+  const clickMetaObjetivo = (event) => {
+    setshowMetaEobjetivo(false)
+    setmostrarInteresses(false);
+    setpaginaProjetoAtivo(false);
+    setApresentarConhecimento(false)
+    setapresentacaoDaPaginaProximoPasso(false)
+    setshowMetaEobjetivo(true)
     event.preventDefault();
   };
   
@@ -65,7 +92,7 @@ const PopUp = () => {
               <p id='linkStyle' onClick={clickInteresses}>Interesses</p>
               <p id='linkStyle' onClick={clickConhecimento}>Conhecimento</p>
               <p id='linkStyle' onClick={clickProximoPasso}>Proximos passos</p>
-              <p id='linkStyle'>Metas e objetivos</p>
+              <p id='linkStyle'  onClick={clickMetaObjetivo} >Metas e objetivos</p>
             </nav>
           </header>
         </div>
@@ -74,6 +101,7 @@ const PopUp = () => {
     {paginaInteresses&& <NewWindow/>}
     {apresentarConhecimento&&<Conhecimento/>}
     {apresentacaoDaPaginaProximoPasso&&<ProximoPasso/>}
+    {showMetaEobjetivo&&<MetasEobjetivo/>}
     </div>
   );
 };

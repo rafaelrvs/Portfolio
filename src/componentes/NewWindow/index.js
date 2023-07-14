@@ -1,4 +1,5 @@
 
+
 import Interesses from "../Interesses"
 import"./NewWindow.css"
 const NewWindow = () =>{
