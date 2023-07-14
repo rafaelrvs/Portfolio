@@ -1,0 +1,14 @@
+
+
+@media (min-width:800px) {
+.body{
+  position: fixed;
+  top: 0%;
+  left: 5%;
+  transform: translate(-50%-50%);
+  height: 1000px;
+  width: 100px;
+  background-color: blue;
+  overflow: hidden;
+}
+}

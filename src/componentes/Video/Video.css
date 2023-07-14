@@ -1,18 +1,26 @@
 
+.video{
+  display: none;
+  position: absolute;
+  display: flex;
+  left: 10%;
+  opacity: 50%;  
 
-@media(min-width:600px) {
+}
+
+@media(max-width:1000px) {
   
   .video{
     position: absolute;
     display: flex;
-    left: 10%;
+    left: 15%;
     opacity: 50%;  
   }
   .content-video{
     position: absolute;
     left: 1px;
-    height: 6500px;
-  
+    height: 650px;
+    
   }
 
   

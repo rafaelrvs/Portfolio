@@ -13,7 +13,7 @@ const ContainerHome = () => {
           <img id='minhaImg' src=".\images\myIMG.jpg" alt="Minha foto " />
 
         </div>
-        <nav>
+        <nav >
           <h3>Desenvolvedor web</h3>
         </nav>
         <nav className="contentRedeSocial" >

@@ -5,6 +5,7 @@ justify-content: flex-end;
 align-items: flex-start;
 margin-right: 150px;
 display: flex;
+
 }
 .video{
   display: none;
@@ -20,26 +21,28 @@ display: flex;
 @media (min-width:1200px) {
   body {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start; 
-    margin-right: 50px;
-    margin-top: 25px; 
+    justify-content:center;
+    align-items: center; 
+    margin-left: 150px;
+   
   }
   header{
     position: relative;
     border: 2px solid #FEDC58;
     height: 650px;
     width: 500px;
-    gap: 60px;
+    border-radius: 25px;
     overflow: hidden;
   }
- 
+  
   .titleMenuHome{
     display: flex;
     top: 1px;
     left:25px;
     font-size: 50pt;
-
+    margin-top: 10px;
+    text-shadow: 5px 5px 10px #000000;
+    
 }
 }
 header{

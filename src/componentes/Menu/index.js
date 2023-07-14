@@ -1,22 +1,23 @@
-import { useRef, useEffect } from 'react'
-import SegundaPagina from '../SegundaPagina'
+import React, { useState } from 'react';
+
 import './Menu.css'
-
-
+import PopUp from '../PopUp';
 const Menu = () => {
-  const  menuPressionado = () =>{
-   const BodySegundaTela = useRef(null);
-   
-   useEffect(() => {
-    // Acessando o elemento do DOM após o componente ter sido montado
-    console.log(BodySegundaTela.current);
-  }, []);
-  
-  return(
-    <div>
+  let [mostrarComponente, setMostrarComponente] = useState(false);
+  const handleButtonClick  =(event)=>{
+        setMostrarComponente(true);
+        event.preventDefault();
       
-        <img onClick={menuPressionado} id='menuOption' src="./images/Menu/menu.png" alt="Menu De opção da pagina" />
-    </div>
+    
+
+  }
+  return(
+      <div  onClick={handleButtonClick}  id='menuItemOption'> 
+      {mostrarComponente && <PopUp />}
+        <p id='linha1'></p>
+        <p id='linha2'></p>
+        <p id='linha3'></p>
+      </div>
   );
 };
 
