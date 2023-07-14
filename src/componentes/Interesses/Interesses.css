@@ -1,0 +1,29 @@
+@media (min-width:800px) {
+.main{
+  position: fixed;
+  color: #ffc91f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 5px 5px 6px black;
+  font-size: 30pt;
+  height: 500px;
+  width: 500px;
+  left: 20%;
+  top: 15%;
+  transform: translate(-50% -50%);
+  z-index: 5;
+}
+#interesses{
+  margin-top: 25px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+
+.dotted-line {
+  border-top: 1px dotted #ffc91f;
+}
+}

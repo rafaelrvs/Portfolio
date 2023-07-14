@@ -28,7 +28,6 @@ display: flex;
   }
   header{
     position: relative;
-    border: 2px solid #FEDC58;
     height: 650px;
     width: 500px;
     border-radius: 25px;

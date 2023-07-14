@@ -1,0 +1,75 @@
+@media (min-width:800px) {
+.divConhecimento{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top:2%;
+  left:1%;
+  transform: translate(-50% -50%);
+  height: 700px;
+  width: 1000px;
+  background:linear-gradient(45deg, #000000,rgb(44, 181, 239));
+  z-index: 6;
+  border-radius: 25px;
+  border: 10px black solid;
+
+}
+#titulo{
+  top: 5%;
+  position: absolute;
+  display: flex;
+  margin-bottom:250px ;
+  font-size: 25pt;
+  color: #ffc91f;
+  font-weight: 700;
+  text-shadow: 5px 5px 10px #000000 ;
+}
+.container-img-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+#imagem-javaScript{
+  height: 50px
+}
+
+#imagem-javaScript:hover{
+  height: 100px
+}
+#imagem-java{
+    height: 50px;
+}
+#imagem-java:hover{
+    height: 100px;
+}
+#imagem-react{
+  height: 50px;
+}
+
+#imagem-react:hover{
+  height: 100px;
+}
+#imagem-css{
+  height: 50px;
+}
+#imagem-css:hover{
+  height: 100px;
+}
+#imagem-html{
+  height: 50px;
+}
+#imagem-html:hover{
+  height: 100px;
+}
+#imagem-postgre:hover{
+  height: 100px;
+}
+#imagem-postgre{
+  height: 50px;   
+}
+}

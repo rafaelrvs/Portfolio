@@ -1,0 +1,25 @@
+.circle-Img{
+  position: relative;
+  display: flex;
+  background-color: #FEDC58;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  margin: 15px;
+}
+#img{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+}
+#img:hover{
+  height: 500px;
+  width:500px;
+  border-radius: 50%;
+}
+

@@ -1,14 +1,112 @@
+.body{
+  position: none;
+  top: 0;
+  left: 20%;
+  transform: translate(-50%-50%);
+  height: 700px;
+  width: 700px;
+  background-color: rgb(44, 181, 239);
+  overflow: hidden;
+  border: black solid 1pc;
+  border-radius: 52px;
+  box-shadow: 10px 10px 10px black;
+  z-index: 2;
+}
 
 
 @media (min-width:800px) {
 .body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  top: 0%;
-  left: 5%;
+  top: 2%;
+  left: 1%;
   transform: translate(-50%-50%);
-  height: 1000px;
-  width: 100px;
-  background-color: blue;
+  height: 680px;
+  width: 1000px;
   overflow: hidden;
+  border: black solid 1pc;
+  border-radius: 52px;
+  box-shadow: 10px 10px 10px black;
+  z-index: 2;
+  background:linear-gradient(10deg, #000000, rgb(44, 181, 239));
+  color: #ffc91f;
+  text-shadow: 1px 2px 5px #000000;
+  gap: 10px;
+}
+.body:hover{
+  animation: rotateColors 5000ms infinite linear;
+}
+@keyframes rotateColors {
+  0% {
+    background:linear-gradient(10deg, #000000, rgb(44, 181, 239));
+  }
+  50%{
+    background:linear-gradient(10deg, rgb(13, 201, 85), rgb(0, 0, 0));
+  }
+  70%{
+    background:linear-gradient(10deg, #ffc91f, black);
+    
+  }
+  100%{
+    background:linear-gradient(10deg, #000000, rgb(44, 181, 239));
+
+  }
+  }
+
+
+  #closed{
+    position: absolute;
+    margin-top: -10px;
+    margin-right: -10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffc91f;
+    font-weight: 900;
+     top: 2%;
+     right: 1%;
+     border-radius: 50%;
+     border: 2px #ffc91f solid;
+     padding: 2px 7px;
+
+   }
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contant{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#LinkProjetoRobo:hover{
+  font-size: 25pt;
+}
+
+#acerteAlvo:hover{
+  font-size: 25pt;
+}
+#adivinheNumero:hover{
+  font-size: 25pt;
+}
+
+#stopWatch:hover{
+  font-size: 25pt;
+}
+
+#calculator:hover{
+  font-size: 25pt;
+
+}
+#imgProjeto{
+  height: 100%;
+  width: 100%;
+  opacity: 90%;
 }
 }

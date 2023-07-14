@@ -15,11 +15,13 @@
     display: flex;
     left: 15%;
     opacity: 50%;  
+    border: 2px solid #ffc91f;
   }
   .content-video{
     position: absolute;
     left: 1px;
     height: 650px;
+  
     
   }
 
