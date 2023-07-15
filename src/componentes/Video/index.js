@@ -5,7 +5,7 @@ const Video = ()=>{
 
     <div className="content-video">
 
-    <video autoPlay muted>
+    <video id="video" autoPlay muted>
       <source className="video" src="./images/Menu/video.mp4" alt="video"  type="video/mp4" />
     </video>
 

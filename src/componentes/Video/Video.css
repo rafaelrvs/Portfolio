@@ -1,29 +1,23 @@
-
-.video{
-  display: none;
-  position: absolute;
-  display: flex;
-  left: 10%;
-  opacity: 50%;  
-
-}
-
-@media(max-width:1000px) {
-  
-  .video{
-    position: absolute;
-    display: flex;
-    left: 15%;
-    opacity: 50%;  
-    border: 2px solid #ffc91f;
-  }
-  .content-video{
-    position: absolute;
-    left: 1px;
-    height: 650px;
-  
+@media(max-width:500px){
+  #video{   
+    height: 300px;
+    display: none;
+    align-items: center;
+    justify-content: center;
     
-  }
-
   
+  }
+}
+@media(min-width:1000px){
+  #video{   
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px solid var(--titulo);
+    margin-right: 50px;
+    margin-bottom: 60px;
+  
+  }
 }

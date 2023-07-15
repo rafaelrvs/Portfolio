@@ -1,4 +1,18 @@
-#imgRedesSociaisLinkedin {
-  margin-top: 10px;
-  height: 50px;
-}
+@media (max-width:500px) {
+  #imgRedesSociaisLinkedin {
+    position:fixed;
+    top: 67%;
+    height: 50px;
+    left: 20%;
+
+  }}
+
+  /*px*/
+@media (min-width:500px) {
+  #imgRedesSociaisLinkedin {
+    position:fixed;
+    top: 62%;
+    height: 50px;
+    left: 46%;
+    transform: translate(-50%,-50%);
+  }}

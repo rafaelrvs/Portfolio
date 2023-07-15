@@ -1,4 +1,24 @@
-#imgRedesSociaisGmail {
-  margin-top: 10px;
-  height: 50px;
+
+@media (max-width:500px) {
+  #imgRedesSociaisGmail {
+    
+    position: fixed;
+   top: 67%;
+    left: 40%;
+    height: 50px;
+    
+  }
 }
+  
+/*pc*/
+@media (min-width:1000px) {
+  #imgRedesSociaisGmail {
+    position: fixed;
+    top: 62%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    
+  }
+}
+  

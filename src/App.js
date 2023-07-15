@@ -7,14 +7,14 @@ import Video from './componentes/Video';
 function App() {
 
   return (
-    <div>
+    <div className='content'>
+      <ContainerHome />
       <header>
-        <Video />
         <h1 className='titleMenuHome'>Hello world</h1>
-        <Menu/>
       </header>
       <main>
-        <ContainerHome />
+        <Video />
+        <Menu/>
       </main>
     </div>
   );
